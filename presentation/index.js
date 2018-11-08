@@ -53,16 +53,6 @@ const theme = createTheme(
   }
 );
 
-const header = `{
-  "alg": "HS256",
-  "typ": "JWT"
-}.`;
-
-const payload = `{
-  "userId": "cjo1jltb1c99q0a63pbc9jjwu",
-  "iat": 1541285441
-}.`;
-
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -135,26 +125,26 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <Appear>
-              <ListItem textColor="white">What a JWT is.</ListItem>
+              <ListItem textColor="white">What is a JWT?</ListItem>
             </Appear>
 
             <Appear>
-              <ListItem textColor="white">What a JWT does.</ListItem>
+              <ListItem textColor="white">What does a JWT do?</ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="white">
-                Some common security threats.
+                Some common security threats?
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="white">
-                How to protect against those threats.
+                How to protect against those threats?
               </ListItem>
             </Appear>
           </List>
           <Appear>
             <Text margin="10px 0 0" textColor="brand1" size={1} fit bold>
-              Plus we'll look at a simplified but pretty cool demo.
+              Plus we'll look at a cool demo!
             </Text>
           </Appear>
           <Notes>
